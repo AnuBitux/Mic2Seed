@@ -3,6 +3,7 @@ import numpy as np
 import hashlib
 import binascii
 import time
+import os
 
 
 class color:
@@ -125,6 +126,12 @@ def binary_string_to_mnemonic(binary_string, word_list_file):
     return mnemonic
 
 # START
+# Changes working directory
+os.chdir('/opt/Tools/WalletGen/Mic2Seed')
+print(color.GREEN + 'This tool creates a BIP39 mnemonic seed getting entropy from your microphone' + color.END)
+# Alert, check mike
+print(color.RED + 'Note that this tool may have undesired results with not properly working hardware. Check your hardware before continuing' + color.END)
+print(color.YELLOW + 'You could use the MicCheck tool or try to record something with the gnome-recorder' + color.END)
 print(color.RED + 'Note that this tool may have undesired results with not properly working hardware. Check your hardware before continuing' + color.END)
 input('Press enter to continue...')
 duration = 30  # Duration in seconds
