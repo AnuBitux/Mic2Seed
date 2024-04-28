@@ -1,4 +1,5 @@
 # Mic2Seed
+### This version has been customized to work with the AnuBitux distro, please refer to the main branch if you want to use the tool in other environments.
 An easy to use python script that collects entropy through the microphone and generates a BIP39 mnemonic seed.
 
 ### Installation
