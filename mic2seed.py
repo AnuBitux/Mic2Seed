@@ -132,7 +132,6 @@ print(color.GREEN + 'This tool creates a BIP39 mnemonic seed getting entropy fro
 # Alert, check mike
 print(color.RED + 'Note that this tool may have undesired results with not properly working hardware. Check your hardware before continuing' + color.END)
 print(color.YELLOW + 'You could use the MicCheck tool or try to record something with the gnome-recorder' + color.END)
-print(color.RED + 'Note that this tool may have undesired results with not properly working hardware. Check your hardware before continuing' + color.END)
 input('Press enter to continue...')
 duration = 30  # Duration in seconds
 recording, fs = record_audio(duration)
